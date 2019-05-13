@@ -11,6 +11,8 @@ import UIKit
 
 extension ViewController {
     func getSearchTextMedia( media: String, term: String) {
+        
+        // networking, grabbing media content
         iTunesAPIClient.getMediaForTermAndMediaString(media, term) { (success, resultMedia, error) in
             DispatchQueue.main.async {
                 if success {
@@ -20,7 +22,7 @@ extension ViewController {
                         }
                         
                         self.filteredMediaArray = resultMedia
-                        self.startActivityIndicator()
+                        self.stopActivityIndicator()
                         self.mediaTableView.reloadData()
                     }
                 } else {

@@ -92,7 +92,8 @@ class iTunesAPIClient: NSObject {
         components.scheme = iTunesAPIClient.Constants.ApiScheme
         components.host = iTunesAPIClient.Constants.ApiHost
         components.path = iTunesAPIClient.Constants.ApiPath
-        
+        components.queryItems = [URLQueryItem]()
+
         let queryItem1 = URLQueryItem(name: iTunesAPIClient.ParameterKeys.Media, value: media)
         
         let queryItem2 = URLQueryItem(name: iTunesAPIClient.ParameterKeys.StringSearch, value: term)
