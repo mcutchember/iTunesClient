@@ -66,6 +66,6 @@ extension ViewController: UISearchBarDelegate, UISearchResultsUpdating {
             actualMedia = ""
         }
         
-        getSearchTextMedia(actualMedia, searchTextFinal)
+        getSearchTextMedia(media: actualMedia, term: searchTextFinal)
     }
 }
