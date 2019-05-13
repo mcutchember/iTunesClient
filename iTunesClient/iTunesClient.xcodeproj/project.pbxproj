@@ -13,6 +13,9 @@
 		310563652287E8AF0023FE1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310563632287E8AF0023FE1D /* Main.storyboard */; };
 		310563672287E8B10023FE1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310563662287E8B10023FE1D /* Assets.xcassets */; };
 		3105636A2287E8B10023FE1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310563682287E8B10023FE1D /* LaunchScreen.storyboard */; };
+		31056372228867230023FE1D /* iTunesMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31056371228867230023FE1D /* iTunesMedia.swift */; };
+		31056374228868730023FE1D /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31056373228868730023FE1D /* iTunesAPI.swift */; };
+		310563762289B5850023FE1D /* iTunesConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310563752289B5850023FE1D /* iTunesConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		310563662287E8B10023FE1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		310563692287E8B10023FE1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3105636B2287E8B10023FE1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31056371228867230023FE1D /* iTunesMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesMedia.swift; sourceTree = "<group>"; };
+		31056373228868730023FE1D /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
+		310563752289B5850023FE1D /* iTunesConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesConstants.swift; sourceTree = "<group>"; };
 		558E755224904CE5281C937C /* Pods-iTunesClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesClient/Pods-iTunesClient.release.xcconfig"; sourceTree = "<group>"; };
 		71D9D91800FE78BCA3E06803 /* Pods_iTunesClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,6 +73,9 @@
 				310563662287E8B10023FE1D /* Assets.xcassets */,
 				310563682287E8B10023FE1D /* LaunchScreen.storyboard */,
 				3105636B2287E8B10023FE1D /* Info.plist */,
+				31056371228867230023FE1D /* iTunesMedia.swift */,
+				31056373228868730023FE1D /* iTunesAPI.swift */,
+				310563752289B5850023FE1D /* iTunesConstants.swift */,
 			);
 			path = iTunesClient;
 			sourceTree = "<group>";
@@ -118,7 +127,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = "Myle$";
+				ORGANIZATIONNAME = Myle$;
 				TargetAttributes = {
 					3105635B2287E8AF0023FE1D = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -200,8 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31056374228868730023FE1D /* iTunesAPI.swift in Sources */,
 				310563622287E8AF0023FE1D /* ViewController.swift in Sources */,
 				310563602287E8AF0023FE1D /* AppDelegate.swift in Sources */,
+				310563762289B5850023FE1D /* iTunesConstants.swift in Sources */,
+				31056372228867230023FE1D /* iTunesMedia.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
